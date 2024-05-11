@@ -1,8 +1,17 @@
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
+// dotenv.config();
 
-mongoose.connect(process.env.MONGODB_URL, {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useFindAndModify: false, //to hide Deprecation warning message on console
-  useUnifiedTopology: true,
-});
+// Connect to db
+// const dbConnection = () => {
+//   mongoose
+//     .connect(process.env.MONGODB_URI)
+//     .then((conn) => {
+//       console.log(
+//         `Database Connected : ${conn.connection.host}`.cyan.underline
+//       );
+//     })
+//     .catch((err) => {
+//       console.error(`Database Error: ${err}`.red);
+//       process.exit(1);
+//     });
+// };
